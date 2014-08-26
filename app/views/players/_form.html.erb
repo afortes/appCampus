@@ -1,0 +1,129 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :apelidos %><br>
+    <%= f.text_field :apelidos %>
+  </div>
+  <div class="field">
+    <%= f.label :dni %><br>
+    <%= f.text_field :dni %>
+  </div>
+  <div class="field">
+    <%= f.label :tarjetaSanitaria %><br>
+    <%= f.number_field :tarjetaSanitaria %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_area :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :cp %><br>
+    <%= f.number_field :cp %>
+  </div>
+  <div class="field">
+    <%= f.label :localidad %><br>
+    <%= f.text_field :localidad %>
+  </div>
+  <div class="field">
+    <%= f.label :provincia %><br>
+    <%= f.text_field :provincia %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br>
+    <%= f.number_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :nombreMadre %><br>
+    <%= f.text_field :nombreMadre %>
+  </div>
+  <div class="field">
+    <%= f.label :telefonoMadre %><br>
+    <%= f.number_field :telefonoMadre %>
+  </div>
+  <div class="field">
+    <%= f.label :nombrePadre %><br>
+    <%= f.text_field :nombrePadre %>
+  </div>
+  <div class="field">
+    <%= f.label :telefonoPadre %><br>
+    <%= f.number_field :telefonoPadre %>
+  </div>
+  <div class="field">
+    <%= f.label :direcDuranteActividad %><br>
+    <%= f.text_area :direcDuranteActividad %>
+  </div>
+  <div class="field">
+    <%= f.label :altura %><br>
+    <%= f.number_field :altura %>
+  </div>
+  <div class="field">
+    <%= f.label :peso %><br>
+    <%= f.number_field :peso %>
+  </div>
+  <div class="field">
+    <%= f.label :talla %><br>
+    <%= f.text_field :talla %>
+  </div>
+  <div class="field">
+    <%= f.label :seNadar %><br>
+    <%= f.check_box :seNadar %>
+  </div>
+  <div class="field">
+    <%= f.label :enfermedades %><br>
+    <%= f.text_area :enfermedades %>
+  </div>
+  <div class="field">
+    <%= f.label :alergias %><br>
+    <%= f.text_area :alergias %>
+  </div>
+  <div class="field">
+    <%= f.label :grupoSanguineo %><br>
+    <%= f.text_field :grupoSanguineo %>
+  </div>
+  <div class="field">
+    <%= f.label :problemasAuditivos %><br>
+    <%= f.check_box :problemasAuditivos %>
+  </div>
+  <div class="field">
+    <%= f.label :centroEstudios %><br>
+    <%= f.text_field :centroEstudios %>
+  </div>
+  <div class="field">
+    <%= f.label :categoria %><br>
+    <%= f.text_field :categoria %>
+  </div>
+  <div class="field">
+    <%= f.label :club %><br>
+    <%= f.text_field :club %>
+  </div>
+  <div class="field">
+    <%= f.label :entrenadorActual %><br>
+    <%= f.text_field :entrenadorActual %>
+  </div>
+  <div class="field">
+    <%= f.label :telefonoEntrenador %><br>
+    <%= f.number_field :telefonoEntrenador %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

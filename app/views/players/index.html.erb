@@ -1,0 +1,53 @@
+<section class="section-colored">  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <h1>Gestión de jugadores</h1>
+        <h4 class="naranjaSubt">Garra</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3"><h1>Inscritos</h1></div>
+      <div class="col-lg-9">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apelidos</th>
+              <th>Categoria</th>
+              <th>Club</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @players.each do |player| %>
+              <tr>
+                <td><%= player.nombre %></td>
+                <td><%= player.apelidos %></td>
+                <td><%= player.categoria %></td>
+                <td><%= player.club %></td>
+                <td><%= link_to 'Show', player %></td>
+                <td><%= link_to 'Edit', edit_player_path(player) %></td>
+                <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <br>
+
+        <%= link_to 'New Player', new_player_path %>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+

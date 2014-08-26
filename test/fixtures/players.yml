@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  apelidos: MyString
+  dni: MyString
+  tarjetaSanitaria: 1
+  direccion: MyText
+  cp: 1
+  localidad: MyString
+  provincia: MyString
+  telefono: 1
+  email: MyString
+  nombreMadre: MyString
+  telefonoMadre: 1
+  nombrePadre: MyString
+  telefonoPadre: 1
+  direcDuranteActividad: MyText
+  altura: 1
+  peso: 1
+  talla: MyString
+  seNadar: false
+  enfermedades: MyText
+  alergias: MyText
+  grupoSanguineo: MyString
+  problemasAuditivos: false
+  centroEstudios: MyString
+  categoria: MyString
+  club: MyString
+  entrenadorActual: MyString
+  telefonoEntrenador: 1
+
+two:
+  nombre: MyString
+  apelidos: MyString
+  dni: MyString
+  tarjetaSanitaria: 1
+  direccion: MyText
+  cp: 1
+  localidad: MyString
+  provincia: MyString
+  telefono: 1
+  email: MyString
+  nombreMadre: MyString
+  telefonoMadre: 1
+  nombrePadre: MyString
+  telefonoPadre: 1
+  direcDuranteActividad: MyText
+  altura: 1
+  peso: 1
+  talla: MyString
+  seNadar: false
+  enfermedades: MyText
+  alergias: MyText
+  grupoSanguineo: MyString
+  problemasAuditivos: false
+  centroEstudios: MyString
+  categoria: MyString
+  club: MyString
+  entrenadorActual: MyString
+  telefonoEntrenador: 1

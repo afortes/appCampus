@@ -1,0 +1,132 @@
+@import url('fuentes.css');
+body {
+	margin-top: 79px; /* adjust this if the height of the menu bar changes */
+	
+	
+	
+
+ 
+}
+
+.nav {
+	margin-top: 28px; /* this is a faux center fix for the nav options - adjust this if you wish to change the logo height or the font of the menu items */
+}
+
+footer {
+	padding: 30px 0;	
+}
+
+/*--------------------------- Modificaciones de la plantilla ----------------------*/
+
+/*Cambiado el ancho automático por uno fijo del popover*/
+
+
+.top-margin-max{
+	margin-top: 50px;
+
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+  padding: 50px 0;
+}
+
+.section-colored {
+	background: rgb(234,137,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(234,137,0,1) 0%, rgba(255,188,93,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(234,137,0,1)), color-stop(100%,rgba(255,188,93,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(234,137,0,1) 0%,rgba(255,188,93,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(234,137,0,1) 0%,rgba(255,188,93,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(234,137,0,1) 0%,rgba(255,188,93,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(234,137,0,1) 0%,rgba(255,188,93,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea8900', endColorstr='#ffbc5d',GradientType=0 ); /* IE6-9 */
+	
+	colo
+}
+.section-colored{
+	margin-bottom: 50px;
+	color: white;
+	
+}
+
+
+
+
+
+
+/*Navbar CSS customizados */
+
+.navbar{
+	background-color: white;
+	border-bottom: 0px;
+
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+color: #e18301;/* CHANGE COLOR HERE*/
+font-family: Lobster;
+font-size: 20px;
+
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a:hover{
+	color: black;
+	background-color: #eaeae9;
+	
+}
+
+.well{
+	
+	 border: 2px solid #ff9400;
+
+}
+.jumbotron{
+	background-color: #ff9400;
+}
+.panel-default{
+	
+}
+.panel-default .panel-heading{
+	border: 2px solid #ff9400;
+	background-color: white;
+
+ 
+}
+
+
+.btn-default{
+	color: #ff9400;
+	border-color: #ff9400;
+
+
+}
+
+.btn-default:hover{
+	background-color: #ff9400;
+	color: white;
+}
+
+.naranjaSubt{
+	color: #fee7c8;
+}
+
+
+h1,h2,h3,.lead{
+	font-family: Lobster;
+}
+
+
+/*POsicionamiento del container jugadores del apartado de sinergias */
+
+#jugadores{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/*POsicionamiento del container jugadorProfesional del apartado catalogo */
+
+#jugadorProfesional{
+	margin-bottom: 50px;
+}
+
