@@ -1,6 +1,20 @@
-<h1>Editing player</h1>
 
-<%= render 'form' %>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+      	<h1>Editando datos de un jugador</h1>
+        <%= link_to 'Show', @player %> |
+		<%= link_to 'Back', players_path %>
+      </div>
+      <div class="col-lg-9">
+    
+        <%= render 'form' %>
+          
+      </div>
+    </div>
+  </div>
+</section>
 
-<%= link_to 'Show', @player %> |
-<%= link_to 'Back', players_path %>
+
+

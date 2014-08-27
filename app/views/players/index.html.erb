@@ -1,24 +1,13 @@
-<section class="section-colored">  
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 ">
-        <h1>Gestión de jugadores</h1>
-        <h4 class="naranjaSubt">Garra</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section>
   <div class="container">
     <div class="row">
       <div class="col-lg-3">
-        <h1>Inscritos</h1>
-        <%= link_to 'Crear uno nuevo', new_player_path %>
+          <%= link_to 'Crear nuevo', new_player_path,class: 'btn btn-large btn-primary' %>
       </div>
       <div class="col-lg-9">
         <table class="table">
+          <h3>Inscritos actualmente en la aplicación</h3>
           <thead>
             <tr>
               <th>Nombre</th>
