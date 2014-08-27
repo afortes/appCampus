@@ -13,13 +13,16 @@
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-3"><h1>Inscritos</h1></div>
+      <div class="col-lg-3">
+        <h1>Inscritos</h1>
+        <%= link_to 'Crear uno nuevo', new_player_path %>
+      </div>
       <div class="col-lg-9">
         <table class="table">
           <thead>
             <tr>
               <th>Nombre</th>
-              <th>Apelidos</th>
+              <th>Apellidos</th>
               <th>Categoria</th>
               <th>Club</th>
               <th colspan="3"></th>
@@ -33,17 +36,16 @@
                 <td><%= player.apelidos %></td>
                 <td><%= player.categoria %></td>
                 <td><%= player.club %></td>
-                <td><%= link_to 'Show', player %></td>
-                <td><%= link_to 'Edit', edit_player_path(player) %></td>
-                <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><span class="glyphicon glyphicon-search"><%= link_to 'Ver', player %></span></td>
+                <td><span class="glyphicon glyphicon-pencil"><%= link_to 'Editar', edit_player_path(player) %></span></td>
+                <td><span class="glyphicon glyphicon-trash"><%= link_to 'Borrar', player, method: :delete, data: { confirm: 'Are you sure?' } %></span></td>
               </tr>
             <% end %>
           </tbody>
         </table>
-
-        <br>
-
-        <%= link_to 'New Player', new_player_path %>
+        <div class="text-center"><%= will_paginate @players, renderer: BootstrapPagination::Rails %></div> 
+        
+  
 
       </div>
     </div>
