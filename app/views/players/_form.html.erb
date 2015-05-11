@@ -19,11 +19,11 @@
     <%= f.number_field :tarjetaSanitaria, label:'Tarjeta sanitaria' %>
     <%= f.text_area :direccion, label:'Dirección' %>
     <%= f.number_field :cp, label:'Código postal' %>
-    <%= f.select(:localidad, options_for_select([['Seleccione',0], ['Álava'], ['Albacete'], ['Alicante/Alacant'], ['Almería'], ['Asturias'], ['Ávila'], ['Badajoz'], ['Barcelona'], ['Burgos'], ['Cáceres'], ['Cádiz'], ['Cantabria'], ['Castellón/Castelló'], ['Ceuta'], ['Ciudad Real'], ['Córdoba'], ['Cuenca'], ['Girona'], ['Las Palmas'], ['Granada'], ['Guadalajara'], ['Guipúzcoa'], ['Huelva'], ['Huesca'], ['Illes Balears'], ['Jaén'], ['A Coruña'], ['La Rioja'], ['León'], ['Lleida'], ['Lugo'], ['Madrid'], ['Málaga'], ['Melilla'], ['Murcia'], ['Navarra'], ['Ourense'], ['Palencia'], ['Pontevedra'], ['Salamanca'], ['Segovia'], ['Sevilla'], ['Soria'], ['Santa Cruz de Tenerife'], ['Teruel'], ['Toledo'], ['Valencia/Valéncia'], ['Valladolid'], ['Vizcaya'], ['Zamora'], ['Zaragoza']]), {}, {class: "form-control"}) %>
+    <%= f.select(:provincia, options_for_select([['Seleccione',0], ['Álava'], ['Albacete'], ['Alicante/Alacant'], ['Almería'], ['Asturias'], ['Ávila'], ['Badajoz'], ['Barcelona'], ['Burgos'], ['Cáceres'], ['Cádiz'], ['Cantabria'], ['Castellón/Castelló'], ['Ceuta'], ['Ciudad Real'], ['Córdoba'], ['Cuenca'], ['Girona'], ['Las Palmas'], ['Granada'], ['Guadalajara'], ['Guipúzcoa'], ['Huelva'], ['Huesca'], ['Illes Balears'], ['Jaén'], ['A Coruña'], ['La Rioja'], ['León'], ['Lleida'], ['Lugo'], ['Madrid'], ['Málaga'], ['Melilla'], ['Murcia'], ['Navarra'], ['Ourense'], ['Palencia'], ['Pontevedra'], ['Salamanca'], ['Segovia'], ['Sevilla'], ['Soria'], ['Santa Cruz de Tenerife'], ['Teruel'], ['Toledo'], ['Valencia/Valéncia'], ['Valladolid'], ['Vizcaya'], ['Zamora'], ['Zaragoza']]), {}, {class: "form-control"}) %>
 
 
 
-    <%= f.text_field :provincia %>
+    <%= f.text_field :localidad %>
     <%= f.number_field :telefono, label:'Teléfono' %>
     <%= f.email_field :email %>
     <%= f.text_field :nombreMadre, label:'Nombre de la madre' %>
